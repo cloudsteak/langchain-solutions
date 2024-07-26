@@ -36,3 +36,35 @@ source ~/.bashrc
 ```bash
 poetry --version
 ```
+
+
+## Streamlit application
+
+### 1. Create virtual environment
+
+```bash
+conda create --prefix ./.venv -y
+conda activate ./.venv
+```
+
+### 2. Install dependencies
+
+```bash
+poetry install --no-root
+```
+
+### 3. Run the application
+
+```bash
+streamlit run RestaurantGenerator/main.py
+```
+
+### 4. Test the application
+
+Open the browser and navigate to `http://localhost:8501/`
+
+### 5. Deactivate the virtual environment
+
+```bash
+conda deactivate
+```
